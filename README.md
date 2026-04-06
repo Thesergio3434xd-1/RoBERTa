@@ -94,30 +94,53 @@ En Colombia, **solo el 35% de los ciudadanos confía en la información de los m
 
 ## 1. Problemática
 
-### 🌍 Contexto Global
+### 🌍 Contexto Global y Definición
 
-Según la UNICEF (2022), las noticias falsas o *fake news* son:
+Según la UNICEF (2022):
 
-> "Anuncios sensacionalistas de aparente corte periodístico con datos e imágenes falsas y fuera de contexto que se respaldan por la saturación de información y contenido viral para lograr obtener atención".
+> "Las noticias falsas, también conocidas como fake news, son anuncios sensacionalistas de aparente corte periodístico con datos e imágenes falsas y fuera de contexto que se respaldan por la saturación de información y contenido viral para lograr obtener atención".
 
-Aunque este fenómeno ha existido a lo largo de la historia, su impacto se ha intensificado en las últimas décadas debido al auge exponencial de la tecnología digital y las redes sociales, facilitando la difusión masiva y veloz de desinformación.
+Este fenómeno **no es nuevo**: las noticias falsas han existido a lo largo de la historia, independientemente de la época, el nivel intelectual de las personas o los medios de comunicación disponibles. Han sido utilizadas como herramientas de manipulación de masas con fines políticos, religiosos, geopolíticos o simplemente personales.
 
-### 🇨🇴 Situación en Colombia
+Sin embargo, en las **últimas décadas, su impacto se ha intensificado** debido al auge de la tecnología, que ha dejado de ser solo una herramienta para convertirse en una necesidad cotidiana, facilitando la difusión masiva y veloz de desinformación.
 
-La situación es particularmente preocupante en Colombia:
+### 🇨🇴 La Crisis de Confianza en Colombia
 
-- **Confianza en medios**: Solo el **35% de los colombianos confía en la información de los medios** (Reuters Institute, 2023)
-- **Polarización política**: Algunos medios asumen posiciones abiertas de oposición al gobierno actual
-- **Uso inadecuado de IA**: Periódicos utilizan inteligencia artificial para generar contenido sin verificación rigurosa
-- **Cambio de hábitos**: Migramos del periódico impreso a consumo de noticias en redes sociales y videos cortos (TikTok, Instagram)
+La situación de las noticias falsas en Colombia es **preocupante**, como indica el informe Reuters (2023):
 
-### ⚠️ Desafíos Actuales
+> "Únicamente el 35% de los colombianos tiene confianza en la información de los medios de información"
 
-Según la Universidad de los Andes (2024):
+**Factores que aumentan la desconfianza:**
 
-> "La responsabilidad de la desinformación también recae en consumidores de contenido, que deben verificar la fuente y su veracidad antes de compartir cualquier información. La difusión de noticias falsas es una amenaza real en la era digital y es cuestión de cada lector detener esta propagación".
+1. 🏛️ **Polarización Política**: Algunos medios abiertamente son oposición del gobierno del presidente Gustavo Petro por sus diferencias políticas
+2. 🤖 **IA sin Verificación**: El uso de periódicos reconocidos del país y su uso de inteligencia artificial para generar nueva información que atraigan a más usuarios, pero cometiendo el error de no verificar dicha información
+3. 📲 **Cambio en Hábitos de Consumo**: Las personas están migrando de medios tradicionales a nuevos formatos
 
-La creciente sofisticación de la IA generativa hace cada vez más difícil distinguir entre contenido genuino y sintético.
+### 📱 El Cambio de Plataformas y su Impacto
+
+Aunque se cambie los medios, **nunca se cambiarán las costumbres**. Pasamos del:
+- ☕ *Tomar café por la mañana mientras leemos el periódico*
+- Al: 📱 *Tomar café por la mañana mientras revisamos las últimas noticias desde nuestro smartphone*
+
+Las personas están adoptando nuevos medios de información (videos cortos, TikTok, Instagram), **desconociendo que estos caen en la misma trampa**: utilizar inteligencia artificial sin verificar fuentes o hasta usarla deliberadamente para generar más vistas.
+
+### 👥 Responsabilidad Compartida
+
+Como expresa un artículo de la Universidad de los Andes (2024) en su artículo *"Riesgos de la desinformación en Colombia"*:
+
+> "Cabe resaltar que la responsabilidad de la desinformación también recae en consumidores de contenido, que deben verificar la fuente y su veracidad antes de compartir cualquier información. La difusión de noticias falsas es una amenaza real en la era digital y es cuestión de cada lector detener esta propagación."
+
+### 🔑 El Desafío de la IA Generativa
+
+Al final es necesario **cuestionar la información** que leemos debido a que la inteligencia artificial provocó que fuera más complejo distinguir qué es una noticia falsa y qué no lo es.
+
+**Nuestros recursos para enfrentar la desinformación se pueden clasificar en tres grandes grupos** (Martina López, 2025):
+
+1. 🤝 **Actores Sociales** — Quienes participan activamente en verificación
+2. 💻 **Tecnologías Disponibles** — Herramientas como RoBERTa para detección automática
+3. 🧠 **Pensamiento Crítico** — La capacidad individual de cada persona
+
+De acuerdo con ello, **queda en nuestras manos cuestionar la información, analizarla y utilizar herramientas tecnológicas que nos ayuden a combatir dicha desinformación.**
 
 ---
 
@@ -125,24 +148,28 @@ La creciente sofisticación de la IA generativa hace cada vez más difícil dist
 
 ### 🤖 RoBERTa: Robustly Optimized BERT
 
-El proyecto utiliza **RoBERTa** (Hugging Face), una versión optimizada del BERT original de Google (2018). 
+El modelo **RoBERTa**, descrito en la documentación de Hugging Face, es una **versión optimizada del BERT original de Google (2018)**.
 
-**Mejoras implementadas en RoBERTa:**
-- ✅ Eliminación de la predicción de siguiente oración durante preentrenamiento
-- ✅ Tamaños de mini-lotes más grandes (512 tokens)
-- ✅ Tasas de aprendizaje optimizadas
-- ✅ Entrenamiento en corpus más extenso
-- ✅ Mayor robustez en tareas de NLP
+**RoBERTa ajusta los hiperparámetros clave** al:
+- ✅ Eliminar la tarea de predicción de la siguiente oración durante el preentrenamiento
+- ✅ Emplear tamaños de mini-lotes mucho más grandes
+- ✅ Utilizar tasas de aprendizaje más altas y optimizadas
+- ✅ Entrenar con corpus de texto más extensos
 
-**Capacidades del modelo:**
-- 🔤 Clasificación de texto
-- 😊 Análisis de sentimiento
-- 🎯 Detección de temas (zero-shot classification)
-- 🔍 Identificación de patrones de desinformación
+Estas mejoras generan un modelo con **mejor rendimiento y robustez** (Hugging Face, S.F).
 
-**Complemento: BART para Clasificación Zero-Shot**
+### 📚 Aplicaciones en NLP
 
-Se integra `facebook/bart-large-mnli` para clasificación de temas sin necesidad de entrenamiento específico previo, permitiendo identificar temáticas incluso en textos no vistos anteriormente.
+Este modelo se utiliza para tareas de **Procesamiento de Lenguaje Natural (NLP)**, entrenado con una gran cantidad de texto y optimizado para:
+
+- 🔤 **Clasificación de Texto** — Determinar si es verdadero o falso
+- 😊 **Reconocimiento de Sentimiento** — Analizar el tono y emoción del contenido
+- 🎯 **Detección de Temas** — Identificar las categorías principales
+- 🔍 **Identificación de Patrones** — Detectar señales de desinformación
+
+### 🔗 Integración: BART Zero-Shot
+
+Adicionalmente, se integra **clasificación zero-shot** con **facebook/bart-large-mnli** para identificar temas sin necesidad de entrenamiento específico previo, permitiendo detectar temáticas incluso en textos no vistos anteriormente.
 
 ---
 
@@ -150,40 +177,51 @@ Se integra `facebook/bart-large-mnli` para clasificación de temas sin necesidad
 
 ### 📊 Enfoque: Aprendizaje Supervisado
 
-Se implementó un modelo de **clasificación supervisada** que:
+Se implementó un modelo de **clasificación supervisada basada en aprendizaje automático** que:
 
 1. **Entrena** con datos etiquetados (verdadero/falso)
-2. **Aprende** patrones lingüísticos y contextuales
+2. **Aprende** patrones lingüísticos y contextuales mediante redes neuronales
 3. **Clasifica** nuevos textos en categorías definidas
-4. **Evalúa** desempeño mediante métricas estándar
+4. **Evalúa** desempeño mediante métricas estándar de ML
 
-### 🎯 Objetivos Específicos
+### 🎯 Características del Enfoque
 
-- Identificar si un texto contiene información verificable o potencialmente falsa
-- Detectar el tema principal del artículo
-- Evaluar el sentimiento general del contenido
-- Cuantificar el nivel de confianza en la veracidad
+Este enfoque asegura que el modelo:
+- Construya reglas automáticas basadas en patrones reales
+- Se mejore iterativamente con más datos
+- Proporcione predicciones confiables y explicables
+- Identifique banderas rojas de desinformación
 
 ---
 
 ## 4. Entrada y Salida del Algoritmo
 
-### 📥 Entrada
+### 📥 Especificaciones de Entrada
 
-| Parámetro | Tipo | Descripción |
-|-----------|------|-------------|
-| **Texto** | `String` | De una oración a documento completo |
-| **Etiquetas** | `Array` | Categorías correctas (en entrenamiento) |
-| **max_length** | `Int` | Longitud máxima de secuencia (default: 512) |
-| **batch_size** | `Int` | Tamaño de lote para procesamiento |
+La entrada al algoritmo es **principalmente del formato de cadena de texto (String)**, que puede variar:
 
-### 📤 Salida
+| Aspecto | Descripción |
+|--------|-------------|
+| **Rango de Texto** | De una oración corta a un documento completo |
+| **Depende de** | La cantidad de caracteres procesables |
+| **En Entrenamiento** | Se incluyen etiquetas que indican la categoría o clase correcta |
+| **Parámetros Principales** | `max_length` y `batch_size` controlan el procesamiento |
 
-| Escenario | Salida |
-|-----------|--------|
-| **Inferencia** | Clase predicha + Probabilidades por clase |
-| **Evaluación** | Precision, Recall, F1-score, Matriz de confusión |
-| **Entrenamiento** | Modelo ajustado + Pesos actualizados |
+### 📤 Especificaciones de Salida
+
+El final del algoritmo cambia dependiendo de la **etapa y la tarea**:
+
+| Modo | Salida |
+|------|--------|
+| **Inferencia** | Pronósticos especiales (marcas de clasificación y probabilidades asociadas) |
+| **Evaluación** | Mediciones de rendimiento para medir la calidad del modelo |
+| **Entrenamiento** | Modelo ajustado que se actualiza para mejorar su precisión en la tarea objetivo |
+
+### 🔧 Parámetros Controlables
+
+- **`max_length`**: Longitud máxima de la secuencia de tokens (default: 512)
+- **`batch_size`**: Tamaño de lote para procesamiento paralelo
+- **Historia de cambios**: El modelo devuelve pesos actualizados en cada iteración de entrenamiento
 
 ---
 
@@ -376,68 +414,138 @@ Los resultados se generan en:
 
 ## 8. Herramientas Utilizadas
 
-### 🧠 Modelos de IA
+### 🔨 Stack Tecnológico Completo
 
-| Herramienta | Propósito | Descripción |
-|-------------|----------|-------------|
-| **RoBERTa-base** | Clasificación de texto | Modelo preentrenado de Hugging Face para NLP |
-| **BART-large-mnli** | Clasificación zero-shot | Detecta temas sin entrenamiento específico |
-| **OpenAI GPT** | Análisis contextual | Verificación crítica de información |
+Para el desarrollo y su respectiva ejecución, se ha empleado **2 APIs, diversas bibliotecas y módulos de Python** que facilitan tareas clave como:
+- Procesamiento de lenguaje natural
+- Manipulación de archivos
+- Manejo de fechas
+- Comunicación con servicios web
 
-### 📚 Bibliotecas Python
+Estas herramientas proporcionan **mecánicas optimizadas que permiten crear un sistema confiable, eficiente y escalable**.
 
-| Librería | Versión | Uso |
-|----------|---------|-----|
-| `transformers` | 4.30+ | Carga de modelos RoBERTa y BART |
-| `torch` | 2.0+ | Cálculos de tensores y redes neuronales |
-| `requests` | 2.31+ | Consumo de APIs HTTP |
-| `numpy` | 1.26.4 | Operaciones numéricas y arrays |
-| `pymupdf` (fitz) | 1.23+ | Lectura y extracción de PDF |
-| `openai` | 1.0+ | Integración con API de OpenAI |
+### 🧠 Modelos de IA Principales
 
-### 🌐 APIs Externas
+| Herramienta | Propósito | Fuente |
+|-------------|----------|--------|
+| **RoBERTa-base** | Clasificación de texto y veracidad | Hugging Face |
+| **BART-large-mnli** | Clasificación zero-shot de temas | Facebook AI |
+| **GPT-4 / GPT-3.5** | Análisis contextual inteligente | OpenAI API |
+
+### 📚 Bibliotecas y Módulos Python
+
+#### 1. **`openai`** — SDK de OpenAI
+El SDK oficial de OpenAI interactúa con sus modelos y servicios de inteligencia artificial, permitiendo integrar modelos de idiomas y otras opciones de IA.
+
+#### 2. **`transformers`** — Hugging Face
+Biblioteca diseñada para facilitar la introducción, la capacitación y las conclusiones de los modelos de idiomas basados en arquitecturas de transformadores como BERT, GPT y RoBERTa. Proporciona acceso a modelos preentrenados y herramientas para personalizar tareas específicas de NLP.
+
+#### 3. **`os`** — Módulo Estándar Python
+Proporciona características para interactuar con el sistema operativo:
+- Manipulación de carpetas y archivos
+- Gestión de variables ambientales
+- Interacción con directorios
+
+#### 4. **`json`** — Módulo Estándar Python
+Módulo para trabajar con JSON (JavaScript Object Notation), facilita:
+- Serialización de estructuras de datos
+- Conversión entre objetos Python y texto JSON
+- Lectura/escritura de datos estructurados
+
+#### 5. **`requests`** — Biblioteca HTTP
+Simplifica la implementación de aplicaciones HTTP, permitiendo:
+- Enviar solicitudes GET, POST, etc.
+- Interactuar con APIs de forma simple
+- Descargar recursos web
+
+#### 6. **`fitz` (PyMuPDF)** — Módulo para PDF
+Proporcionado por PyMuPDF, funciona con archivos PDF y otros formatos de documentos. Permite:
+- Abrir y manipular archivos PDF
+- Obtener texto e imágenes
+- Realizar operaciones PDF de manera efectiva
+
+#### 7. **`datetime`** — Módulo Estándar Python
+Módulo para procesar fechas y horas, permitiendo:
+- Crear y manipular objetos de tiempo
+- Cambiar y formatear fechas
+- Registrar timestamps de análisis
+
+#### 8. **`warnings`** — Módulo Estándar Python
+Permite advertencias y alertas durante el programa para:
+- Informar al usuario de situaciones potencialmente problemáticas
+- No detener el rendimiento del sistema
+- Rastrear problemas sin causar fallos
+
+#### 9. **`re`** — Módulo de Expresiones Regulares
+Módulo estándar para expresiones regulares de Python, facilitando:
+- Búsquedas sofisticadas en texto
+- Extracción de patrones
+- Reemplazo en cadenas de texto
+
+#### 10. **`numpy`** — Computación Científica
+Biblioteca básica para computación científica Python:
+- Estructuras de datos (arrays multidimensionales)
+- Funciones matemáticas efectivas
+- Operaciones numéricas y álgebra lineal
+
+### 🌐 APIs Externas Integradas
 
 | API | Función | Tipo |
 |-----|---------|------|
-| **NewsAPI** | Búsqueda y obtención de noticias | REST |
-| **GNews** | Alternativa para noticias | REST |
-| **OpenAI** | Análisis inteligente de contenido | REST |
+| **NewsAPI** | Búsqueda y obtención de noticias actuales | REST |
+| **GNews** | Alternativa para búsqueda de noticias | REST |
+| **OpenAI** | Análisis inteligente y contextual de contenido | REST |
 
-### 📦 Módulos Estándar Python
+### 📦 Tabla Resumen de Dependencias
 
-```python
-import os              # Interacción con sistema operativo
-import json            # Lectura/escritura de JSON
-import re              # Expresiones regulares
-import warnings        # Control de advertencias
-from datetime import datetime  # Manejo de fechas y horas
+```
+transformers (4.30+)    → Modelos NLP
+torch (2.0+)            → Tensores y redes neuronales
+requests (2.31+)        → Consumo de APIs HTTP
+numpy (1.26.4)          → Operaciones numéricas
+pymupdf (1.23+)         → Lectura de PDFs
+openai (1.0+)           → API de OpenAI
+jupyter (1.0+)          → Notebooks interactivos
 ```
 
 ---
 
 ## 9. Manejador de Datos
 
-### 🔄 Flujo de Procesamiento
+### 🔄 Flujo Completo de Procesamiento
+
+El proceso comienza con la **carga en el archivo JSON** que contiene el texto, seguido de lectura y obtención de los campos de datos relevantes.
 
 ```
-1️⃣ Carga             → Leer archivo JSON o PDF
+1️⃣ CARGA DE ARCHIVO
+   ↓ Leer JSON con noticias
    ↓
-2️⃣ Extracción        → Obtener campos relevantes
+2️⃣ EXTRACCIÓN DE DATOS
+   ↓ Obtener campos relevantes (título, contenido, etiquetas)
    ↓
-3️⃣ Limpieza          → Remover caracteres especiales, espacios
+3️⃣ PREPROCESAMIENTO
+   ↓ Procesar datos para prepararlos correctamente
    ↓
-4️⃣ Tokenización      → Dividir en tokens con RoBERTaTokenizer
+4️⃣ TOKENIZACIÓN
+   ↓ El texto se marca a través del modelo RoBERTa
+   ↓ Convierte palabras en tokens
    ↓
-5️⃣ Embedding         → Convertir a representación numérica
+5️⃣ CODIFICACIÓN NUMÉRICA
+   ↓ Tokens se convierten en representación numérica
+   ↓ (embeddings = endurecimiento numérico)
    ↓
-6️⃣ Inferencia        → Pasar por modelo RoBERTa
+6️⃣ INTERPRETACIÓN ML
+   ↓ Los números pueden interpretarse con patrones
+   ↓ de aprendizaje automático
    ↓
-7️⃣ Clasificación     → Obtener predicción + probabilidades
+7️⃣ ALMACENAMIENTO
+   ↓ Datos etiquetados se guardan
    ↓
-8️⃣ Almacenamiento    → Guardar resultados en JSON
+8️⃣ ENTRENAMIENTO
+   ↓ Listos para entrenar el modelo
 ```
 
-### 📥 Entrada de Datos
+### 📥 Características de Entrada
 
 **Peso en disco:**
 - Cada PDF: 100KB - 500KB
@@ -450,13 +558,13 @@ from datetime import datetime  # Manejo de fechas y horas
   "contenido": "Texto del artículo...",
   "fecha": "2025-05-28",
   "fuente": "Periódico X",
-  "etiqueta": "verdadero"
+  "etiqueta": "verdadero|falso"
 }
 ```
 
-### 📤 Salida de Datos
+### 📤 Características de Salida
 
-**Formato de salida (JSON):**
+**Formato de salida (JSON) después del análisis:**
 ```json
 {
   "documento": "noticia.pdf",
@@ -467,7 +575,8 @@ from datetime import datetime  # Manejo de fechas y horas
   "probabilidad_verdadero": 0.88,
   "sentimiento": "positivo",
   "sentimiento_score": 0.76,
-  "fecha_analisis": "2025-05-28T14:30:00"
+  "fecha_analisis": "2025-05-28T14:30:00",
+  "banderas_rojas": []
 }
 ```
 
@@ -475,7 +584,27 @@ from datetime import datetime  # Manejo de fechas y horas
 
 ## 10. Partes Relevantes del Código
 
-### 🔧 Inicialización de Modelos Transformers
+### 🔧 Inicialización Condicional de Transformers
+
+Este fragmento de **condicionales verifica si la variable `USE_TRANSFORMERS` es verdadera** para intentar inicializar modelos de procesamiento de lenguaje natural basados en Transformers.
+
+**Proceso detallado:**
+
+1. **Se inicializa el tokenizador y el modelo RoBERTa** preentrenado (`roberta-base`)
+   - Utiliza las clases `RobertaTokenizer` y `RobertaForSequenceClassification`
+   - Dedicado a la clasificación de temas
+
+2. **Se crea un pipeline de clasificación "zero-shot"** con un modelo distinto
+   - Usa `facebook/bart-large-mnli`
+   - Para detectar temas sin necesidad de entrenamiento específico
+
+3. **Si los modelos se inicializan correctamente**
+   - Se imprime un mensaje de confirmación
+   
+4. **En caso de excepción durante este proceso**
+   - El error se captura y se imprime un mensaje descriptivo del fallo
+   - La variable `USE_TRANSFORMERS` se cambia a `False`
+   - Indica que los modelos no están disponibles o no se pudieron cargar
 
 ```python
 if USE_TRANSFORMERS:
@@ -495,40 +624,74 @@ if USE_TRANSFORMERS:
         USE_TRANSFORMERS = False
 ```
 
-### 🔍 Función: Detectar Tema Principal
-
-La función `detectar_tema()` utiliza dos modos:
-
-**Modo sin Transformers (fallback):**
-- Análisis basado en palabras clave
-- Busca coincidencias en lista de temas predefinidos
-- Confianza calculada por frecuencia de coincidencias
-
-**Modo con Transformers (preferido):**
-- Usa pipeline `facebook/bart-large-mnli`
-- Clasifica el texto en temas dados
-- Retorna tema con mayor probabilidad
-
 ### 📰 Función: Búsqueda Escalonada de Noticias
+
+La función `buscar_noticias` está **diseñada para obtener noticias relacionadas con un tema particular**, buscando una cierta cantidad de resultados.
+
+**Proceso de búsqueda en cascada (fallback):**
+
+1. **Primero intenta consultar la API de NewsAPI**
+   - Usando la clave especificada
+   - Si la respuesta es exitosa y contiene artículos:
+   - Extrae información (nombre, descripción, fecha, fuente, URL)
+   - Guarda resultados en la lista
+
+2. **Si no hay resultado o se produce un error**
+   - La función intenta con **GNews API**
+   - Realiza un proceso similar para obtener y guardar noticias
+
+3. **Finalmente, en ausencia de resultados**
+   - Consulta con **SpaceFlight News API** (alternativa pública)
+   - Asegura que siempre se devuelvan noticias relevantes
+
+4. **A lo largo del proceso**
+   - Los posibles errores se tratan a través de bloques `try-except`
+   - Una lista de noticias se devuelve como resultado
+   - Proporciona una búsqueda gradual y confiable usando varias fuentes
 
 ```python
 def buscar_noticias(tema, cantidad=5):
     """
     Intenta buscar noticias en múltiples APIs en cascada:
     1. NewsAPI (API principal)
-    2. GNews (alternativa)
+    2. GNews (alternativa de pago)
     3. SpaceFlight News (fallback público)
     """
-    # Primero intenta NewsAPI
-    if not resultados:
+    resultados = []
+    
+    # Intenta NewsAPI primero
+    try:
+        # ... código NewsAPI
+        pass
+    except:
         # Si falla, intenta GNews
-        if not resultados:
-            # Finalmente usa SpaceFlight News
+        try:
+            # ... código GNews
             pass
+        except:
+            # Finalmente usa SpaceFlight News
+            try:
+                # ... código SpaceFlight
+                pass
+            except:
+                pass
+    
     return resultados
 ```
 
-### 💬 Variables de Control de Prompts
+### 💬 Variables Clave para Construir Prompts
+
+En el código, **se utilizan varias variables clave para construir y controlar la interacción** con el modelo.
+
+| Variable | Descripción | Ejemplo |
+|----------|-------------|---------|
+| **`prompt`** | Texto principal enviado al modelo | Integra tema, contexto y noticias |
+| **`contexto_resumido`** | Contexto truncado a 2000 caracteres | Evita exceder el límite de tokens |
+| **`system_content`** | Instrucciones del rol del asistente | "Eres un experto en verificación..." |
+| **`messages`** | Estructura de conversación para OpenAI | Array con roles y contenidos |
+| **`response`** | Respuesta obtenida tras llamada al modelo | Retornada como resultado final |
+
+**Estas variables trabajan en conjunto** para personalizar y controlar el flujo de información hacia y desde el chatbot/modelo de IA.
 
 ```python
 # Texto enviado al modelo
@@ -538,6 +701,8 @@ Analiza la siguiente noticia sobre {tema}:
 
 Noticias relacionadas:
 {noticias_relevantes}
+
+¿Es esta información verdadera o falsaì
 """
 
 # Contexto truncado a 2000 caracteres
@@ -545,7 +710,8 @@ contexto_resumido = texto_original[:2000]
 
 # Instrucciones del rol del asistente
 system_content = """Eres un experto en verificación de noticias.
-Analiza crítica y objetivamente la información."""
+Analiza crítica y objetivamente la información.
+Proporciona probabilidades de veracidad."""
 
 # Estructura de conversación para OpenAI
 messages = [
@@ -567,60 +733,84 @@ response = openai.ChatCompletion.create(
 
 ### 📊 Análisis Masivo Realizado
 
-Se evaluaron **20 documentos PDF** en dos categorías:
+Se evaluaron **dos escenarios principales** después de la evaluación del modelo RoBERTa, que se utilizó para **determinar la autenticidad en los documentos de texto**.
 
-| Categoría | Cantidad | Rango de páginas |
-|-----------|----------|------------------|
-| ✅ Noticias Verdaderas | 10 | 2-8 páginas |
-| ❌ Noticias Falsas | 10 | 1-5 páginas |
+#### 1️⃣ Análisis Masivo de Archivos
+- **20 archivos en total** — 10 verdaderos y 10 falsos
+- Dataset **equilibrado** para medir objetivamente el rendimiento
+- Conjunto realista que permite validar el modelo en contextos variados
 
-### 📈 Métricas de Desempeño
+#### 2️⃣ Análisis Individual de PDF
+- **Detectar información falsa** en documentos específicos
+- Verificar capacidad de clasificación en escala individual
+- Validar explicabilidad de resultados
 
-El modelo fue evaluado usando las siguientes métricas estándar:
+### 📈 Métricas de Rendimiento
 
-| Métrica | Descripción | Fórmula |
-|---------|-------------|---------|
-| **Precision** | De lo clasificado como falso, ¿cuánto es realmente falso? | TP / (TP + FP) |
-| **Recall** | De los falsos verdaderos, ¿cuántos detectó? | TP / (TP + FN) |
-| **F1-Score** | Promedio armónico entre Precision y Recall | 2 × (P × R) / (P + R) |
-| **Accuracy** | Porcentaje total de predicciones correctas | (TP + TN) / Total |
+Se utilizaron las siguientes métricas estándar de Machine Learning:
 
-### 🎯 Matriz de Confusión
+| Métrica | Descripción | Interpretación |
+|---------|-------------|-----------------|
+| **Precision** | De lo clasificado como FALSO, ¿cuánto es realmente falso? | Mide exactitud de predicciones positivas |
+| **Recall** | De todos los FALSOS reales, ¿cuántos detectó el modelo? | Mide capacidad de encontrar todos los falsos |
+| **F1-Score** | Promedio armónico entre Precision y Recall | Balance entre exactitud y cobertura |
+| **Accuracy** | Porcentaje total de predicciones correctas | Performance general del modelo |
+
+### 🎯 Matriz de Confusión Esperada
 
 ```
-                    Predicho Verdadero    Predicho Falso
-Realmente Verdadero      [TP]                   [FN]
-Realmente Falso          [FP]                   [TN]
+                    Predicción: Verdadero    Predicción: Falso
+Realmente Verdadero      TP (Correcto)           FN (Error)
+Realmente Falso          FP (Error)              TN (Correcto)
 ```
+
+Donde:
+- **TP** (True Positive) = Detectó falso correctamente
+- **TN** (True Negative) = Detectó verdadero correctamente
+- **FP** (False Positive) = Predijo falso incorrectamente
+- **FN** (False Negative) = No detectó un falso
 
 ### 🏆 Hallazgos Principales
 
-1. ✅ El modelo muestra **alta capacidad** para distinguir contenido genuino de desinformación
-2. ✅ Identifica correctamente el **tema principal** del artículo
-3. ✅ Detecta **expresiones engañosas** y afirmaciones falsas
-4. ✅ Evalúa el **sentimiento general** del contenido
-5. ✅ Cuantifica el **nivel de confianza** en veracidad
+1. ✅ **Alta Capacidad de Distinción** — El modelo muestra capacidad para distinguir información verdadera y potencialmente engañosa en textos periodísticos
 
-### 📝 Ejemplo de Análisis
+2. ✅ **Identificación Multidimensional** — Permite identificar:
+   - Tema principal del texto
+   - Sentimiento general del contenido
+   - Nivel de confianza en veracidad
 
-**Input:**
+3. ✅ **Escalabilidad** — La solución puede escalarse para análisis simultaneo de múltiples noticias
+
+4. ✅ **Multimodal Setup** — Sistema detectó un **nivel bajo de confianza** en la veracidad y señaló la presencia de **afirmaciones falsas o engañosas** dentro de los documentos
+
+5. ✅ **Capacidad Explicativa** — Ejemplificó la capacidad del modelo para identificar desinformación en textos complejos relacionados con noticias falsas
+
+### 📝 Caso de Uso: Ejemplo de Análisis
+
+**Input (Texto de entrada):**
 ```
 "Los científicos descubren que los gatos son agentes secretos intergalácticos"
 ```
 
-**Output:**
+**Output (Resultado del análisis):**
 ```json
 {
+  "documento": "noticia_gatos.pdf",
   "es_verdadero": false,
-  "confianza": 0.94,
-  "razon": "Afirmación sensacionalista sin base científica",
-  "tema": "Ciencia",
+  "confianza_veracidad": 0.94,
+  "tema_detectado": "Ciencia",
+  "confianza_tema": 0.89,
   "sentimiento": "neutral",
+  "razon": "Afirmación sensacionalista sin base científica",
   "banderas_rojas": [
-    "Afirmación extraordinaria sin fuente",
-    "Lenguaje sensacionalista",
-    "Falta de contexto científico"
-  ]
+    "Afirmación extraordinaria sin fuente verificable",
+    "Lenguaje sensacionalista y alarmista",
+    "Falta de contexto científico riguroso",
+    "Ausencia de referencias académicas"
+  ],
+  "probabilidad_falso": 0.94,
+  "probabilidad_verdadero": 0.06,
+  "fecha_analisis": "2025-05-28T14:35:22"
 }
 ```
 
@@ -628,47 +818,84 @@ Realmente Falso          [FP]                   [TN]
 
 ## 12. Conclusiones
 
-### 🎓 Hallazgos Académicos
+### 🎓 Resultados Obtenidos
 
-1. **Efectividad del Modelo**: RoBERTa demuestra ser eficaz para clasificar automáticamente noticias verdaderas vs. falsas en contexto hispano.
+El desarrollo de **RoBERTa para clasificación automática de noticias falsas** ha demostrado ser una **herramienta efectiva** en la lucha contra la desinformación. A través de la integración de modelos de lenguaje preentrenados con arquitecturas modernas, el sistema asimila el contexto textual en múltiples dimensiones:
 
-2. **Importancia de la Verificación**: La evaluación en 20 documentos balanceados prueba la confiabilidad del sistema para detectar desinformación en contextos reales.
+#### ✅ Logros Principales Alcanzados
 
-3. **Capacidades Multimodales**: El sistema no solo clasifica, sino que también:
-   - Identifica temas
-   - Analiza sentimientos
-   - Evalúa nivel de confianza
+1. **Arquitectura Robusta**
+   - Sistema capaz de procesar múltiples documentos en paralelo
+   - Integración exitosa de modelos especializados (RoBERTa, BART)
+   - Fallback mechanism garantiza disponibilidad incluso si una API falla
 
-4. **Escalabilidad**: La arquitectura permite:
-   - Análisis simultáneo de múltiples noticias
-   - Integración con sistemas de verificación existentes
-   - Mejora continua con más datos
+2. **Clasificación Multiescala**
+   - Detecta **veracidad** del contenido
+   - Identifica **tema principal** sin entrenamiento específico
+   - Analiza **sentimiento** del texto
+   - Evalúa **confianza** en predicciones
 
-### 🔮 Trabajo Futuro
+3. **Contextualización Inteligente**
+   - Utiliza noticias similares como referencia para decisiones
+   - Integra análisis crítico mediante GPT-4
+   - Trunca contexto inteligentemente (2000 caracteres máximo)
 
-| Mejora Propuesta | Impacto | Complejidad |
-|-----------------|---------|------------|
-| Integración CNN para análisis de imágenes | Detección de deepfakes | 🔴 Alta |
-| Multiidioma (no solo español) | Alcance global | 🟡 Media |
-| Entrenamiento con datos reales colombianos | Precisión local | 🟢 Baja |
-| API REST para consumo | Productivización | 🟡 Media |
-| Dashboard interactivo | Visualización | 🟡 Media |
-| Blockchain para auditoría | Trazabilidad | 🔴 Alta |
+4. **Escalabilidad Demostrada**
+   - Procesó satisfactoriamente 20 documentos de prueba
+   - Dataset equilibrado (50% verdadero, 50% falso)
+   - Tiempo de análisis aceptable por documento
 
-### 💡 Lecciones Aprendidas
+### 🚀 Aplicaciones Futuras
 
-- ✅ La combinación de NLP + APIs mejora significativamente la detección
-- ✅ El contexto local (Colombia) es crítico para precisión
-- ✅ La verificación manual de fuentes sigue siendo esencial
-- ✅ Los usuarios finales necesitan explicabilidad, no solo predicciones
+El sistema presentado abre puertas hacia múltiples extensiones y mejoras:
 
-### 🎯 Impacto Potencial
+#### 1. **Expansión del Dataset**
+- Incorporar más lenguajes (español, inglés, portugués, etc.)
+- Validar rendimiento con noticias actuales from fuentes diversas
+- Crear dataset de referencia académico para Colombia
 
-Este proyecto contribuye a:
-- 🛡️ Lucha contra la desinformación digital
-- 📚 Educación en pensamiento crítico
-- 🔬 Avance en tecnología NLP hispanohablante
-- 🌍 Mejora de confianza en medios de comunicación
+#### 2. **Mejora de Modelos**
+- Fine-tuning de RoBERTa con datos específicos de desinformación colombiana
+- Entrenamiento de clasificadores locales
+- Integración de factores sociodemográficos (región, edad, educación)
+
+#### 3. **Herramientas Auxiliares**
+- Interfaz web interactiva para usuarios finales
+- Plugin para navegadores para análisis en tiempo real
+- API pública para investigadores
+
+#### 4. **Análisis Multimodal**
+- Extender análisis a **imágenes** y **videos**
+- Detectar deepfakes y manipulación visual
+- Integrar análisis de metadatos
+
+#### 5. **Integración Social**
+- Alertas automáticas en redes sociales
+- Validación de contenido antes de reposteos
+- Feedback en tiempo real a creadores de contenido
+
+### 💡 Reflexión Final
+
+La **desinformación representa una amenaza crítica** para la democracia y la integridad de la información en la sociedad colombiana. Herramientas como **RoBERTa** no son panacea absoluta, pero **reducen significativamente** la propagación de contenido falso si se utilizan responsablemente.
+
+**El futuro de la lucha contra la desinformación depende de:**
+
+- 🤝 **Colaboración** entre académicos, tecnólogos y periodistas
+- 📊 **Transparencia** en metodologías y fuentes de datos
+- 🎓 **Educación** digital para usuarios finales
+- 🔍 **Investigación continua** adaptándose a nuevas tácticas de desinformación
+- 🌍 **Soluciones locales** contextualizadas a cada región
+
+RoBERTa es un paso concreto hacia esta dirección. Su desarrollo refleja nuestro compromiso con una **información más verificada, un público más informado y una sociedad más resiliente**.
+
+### 🔮 Visión a Largo Plazo
+
+Esperamos que esta investigación inspire futuras iniciativas que:
+1. Combinen máquinas y expertos humanos
+2. Prioricen la verificación sobre la velocidad
+3. Empoderen a comunidades locales con herramientas de análisis
+4. Creen estándares internacionales para autenticidad de contenido
+5. Establezcan responsabilidades claras para plataformas digitales
 
 ---
 
