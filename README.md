@@ -1,40 +1,76 @@
-# 🛡️ Detección de Noticias Falsas con RoBERTa en Colombia
-## Análisis Automatizado de Desinformación mediante NLP
+# 🛡️ RoBERTa
 
 <div align="center">
+
+<img src="Logo futurista de RoBERTa AI.png" alt="Logo RoBERTa AI" width="420" />
+
+### Detección Inteligente de Noticias Falsas mediante NLP
+
+**Un sistema avanzado de verificación de desinformación usando Machine Learning y Procesamiento de Lenguaje Natural**
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Transformers](https://img.shields.io/badge/Transformers-Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 ![NLP](https://img.shields.io/badge/NLP-RoBERTa-8A2BE2?style=for-the-badge)
+![Machine Learning](https://img.shields.io/badge/ML-Supervisado-ff6b6b?style=for-the-badge)
 ![Estado](https://img.shields.io/badge/Estado-Completado-success?style=for-the-badge)
 ![Licencia](https://img.shields.io/badge/Licencia-MIT-green?style=for-the-badge)
 
-<img src="Logo futurista de RoBERTa AI.png" alt="Logo RoBERTa AI" width="380" />
+<br/>
 
-**Proyecto Académico - Electiva 3**  
-*Detección Inteligente de Desinformación usando Procesamiento de Lenguaje Natural*
+📡 **Tecnologías principales:**
+
+<a href="https://huggingface.co/">
+  <img src="https://cdn.simpleicons.org/huggingface/FFD21E?color=FFD21E" alt="Hugging Face" width="40" />
+</a>&nbsp;
+<a href="https://www.python.org/">
+  <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="40" />
+</a>&nbsp;
+<a href="https://pytorch.org/">
+  <img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="PyTorch" width="40" />
+</a>&nbsp;
+<a href="https://openai.com/">
+  <img src="https://cdn.simpleicons.org/openai/412991" alt="OpenAI" width="40" />
+</a>&nbsp;
+<a href="https://jupyter.org/">
+  <img src="https://cdn.simpleicons.org/jupyter/F37726" alt="Jupyter" width="40" />
+</a>
 
 </div>
 
 ---
 
-## � Información del Proyecto
+## 👥 Creadores
 
-| Aspecto | Detalles |
-|--------|---------|
-| **Institución** | Universidad Distrital Francisco José de Caldas |
-| **Materia** | Electiva 3 - Tópicos Avanzados |
-| **Tipo de Proyecto** | Machine Learning / NLP |
-| **Estado** | ✅ Completado |
-| **Fecha de Realización** | 28 de mayo de 2025 |
+- **[Oscar Cuadros Rodríguez](https://github.com/Wozniak343)**
+- **[Ronald Neomar Tapias Rojas](https://github.com/RontaTheOne)**
+- **[Sergio Alejandro Uribe Montealegre](https://github.com/Thesergio3434xd-1)**
 
-### 👥 Autores
+---
 
-| Nombre | Rol |
-|--------|-----|
-| **Oscar Cuadros Rodríguez** | Desarrollador Lead |
-| **Ronald Neomar Tapias Rojas** | Investigador de Datos |
-| **Sergio Alejandro Uribe Montealegre** | Ingeniero de Modelos |
+## 🔍 ¿Qué es RoBERTa?
+
+**RoBERTa** es un proyecto innovador de **detección automática de noticias falsas** que utiliza inteligencia artificial y procesamiento de lenguaje natural (NLP) para identificar y clasificar desinformación en textos periodísticos.
+
+### 🎯 Características Principales
+
+| Característica | Descripción |
+|---|---|
+| 🤖 **Modelo Inteligente** | Basado en RoBERTa (BERT optimizado) de Hugging Face |
+| 📊 **Análisis Multimodal** | Detecta tema, sentimiento y veracidad simultáneamente |
+| 🔗 **Múltiples Fuentes** | Integración con NewsAPI, GNews y OpenAI GPT |
+| 📈 **Métricas Precisas** | Precision, Recall, F1-score y análisis de matriz de confusión |
+| 💾 **Dataset Balanceado** | 20 documentos (10 reales + 10 falsos) para validación |
+| ⚡ **Procesamiento Rápido** | Análisis de PDFs en segundos |
+| 🔐 **Seguro** | Variables de entorno para claves API |
+
+### 💡 ¿Por qué es importante?
+
+En Colombia, **solo el 35% de los ciudadanos confía en la información de los medios** (Reuters, 2023). La desinformación se propaga a través de redes sociales, videos cortos y plataformas digitales más rápido que nunca. RoBERTa combate esto proporcionando:
+
+- ✅ Verificación automática de contenido
+- ✅ Identificación de patrones de desinformación
+- ✅ Análisis inteligente y explicable
+- ✅ Herramienta educativa sobre fake news
 
 ---
 
@@ -681,13 +717,11 @@ Ver archivo [LICENSE](LICENSE) para detalles completos.
 
 ---
 
-## 📞 Contacto y Soporte
+## 📞 Creadores y Contacto
 
-| Autor | Email | GitHub |
-|-------|-------|--------|
-| Oscar Cuadros Rodríguez | oscar.cuadros@estudiantil.udistrital.edu.co | [@OscarCuadros](https://github.com/Thesergio3434xd-1) |
-| Ronald Neomar Tapias Rojas | ronald.tapias@estudiantil.udistrital.edu.co | [@RonaldTapias](https://github.com/Thesergio3434xd-1) |
-| Sergio Alejandro Uribe Montealegre | sergio.uribe@estudiantil.udistrital.edu.co | [@Thesergio3434xd-1](https://github.com/Thesergio3434xd-1) |
+- **[Oscar Cuadros Rodríguez](https://github.com/Wozniak343)**
+- **[Ronald Neomar Tapias Rojas](https://github.com/RontaTheOne)**
+- **[Sergio Alejandro Uribe Montealegre](https://github.com/Thesergio3434xd-1)**
 
 ---
 
