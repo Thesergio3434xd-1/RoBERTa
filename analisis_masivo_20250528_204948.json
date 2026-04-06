@@ -1,0 +1,209 @@
+{
+  "verdaderas": {
+    "archivos": [],
+    "correctos": 8,
+    "incorrectos": 2,
+    "detalles": [
+      {
+        "archivo": "CINE.pdf",
+        "tema": "Entretenimiento",
+        "confianza_tema": 0.6,
+        "veracidad": "Falso",
+        "confianza_veracidad": 0.1,
+        "clasificacion_correcta": false,
+        "contenido_preview": "Entretenimiento\nRevelan el cast de nueva versión de Harry Potter\nMié, 28/05/2025 - 11:50\nLa nueva serie basada en el universo de Harry Potter es toda una realidad y se conﬁrmó su elenco principal.\nCré..."
+      },
+      {
+        "archivo": "COVID.pdf",
+        "tema": "COVID-19",
+        "confianza_tema": 0.7,
+        "veracidad": "Mayormente verdadero",
+        "confianza_veracidad": 0.75,
+        "clasificacion_correcta": true,
+        "contenido_preview": "14 de octubre de 2021\nÍndice\nCOVID-19\nInforme\nCEPAL-OPS\nLa prolongación de la crisis \nsanitaria y su impacto \nen la salud, la economía \ny el desarrollo social\nPrólogo....................................."
+      },
+      {
+        "archivo": "ECONOMIA.pdf",
+        "tema": "Economía",
+        "confianza_tema": 0.9,
+        "veracidad": "Mayormente verdadero",
+        "confianza_veracidad": 0.75,
+        "clasificacion_correcta": true,
+        "contenido_preview": "Naciones Unidas\nEconomías de América Latina y el\nCaribe mantienen un bajo crecimiento y\nse expandirán 2,2% en 2024 y 2,4% en\n2025: CEPAL\n18 DE DICIEMBRE DE 2024 | COMUNICADO DE PRENSA\nÁREA(S) DE TRABA..."
+      },
+      {
+        "archivo": "EDUCACION.pdf",
+        "tema": "General",
+        "confianza_tema": 0.5,
+        "veracidad": "Mayormente verdadero",
+        "confianza_veracidad": 0.75,
+        "clasificacion_correcta": true,
+        "contenido_preview": "Informe anual 2023\nCumplir la promesa\nMensaje de la Directora\nEjecutiva\nEl año pasado se rompieron récords y promesas. Vimos cómo se alcanzaban nuevos máximos de emisiones de\ngases de efecto invernade..."
+      },
+      {
+        "archivo": "FUTBOL.pdf",
+        "tema": "General",
+        "confianza_tema": 0.5,
+        "veracidad": "Mayormente falso",
+        "confianza_veracidad": 0.3,
+        "clasificacion_correcta": false,
+        "contenido_preview": "El \n acostumbra a ser un protagonista del mundo del fútbol, dentro de la cancha y\ntambién en el mercado de transferencias. Reconocido por su capacidad para realizar\nincorporaciones de alto calibre, el..."
+      },
+      {
+        "archivo": "POLITICA.pdf",
+        "tema": "General",
+        "confianza_tema": 0.5,
+        "veracidad": "Mayormente verdadero",
+        "confianza_veracidad": 0.6,
+        "clasificacion_correcta": true,
+        "contenido_preview": "Semana | Semana TV | El Debate\nEL DEBATE\n“Atemorizante mensaje de dictadura: el lobo ya\nempezó a mostrar las orejas”\nTras el fracaso de las movilizaciones, al no ser tan masivas como esperaban sus ges..."
+      },
+      {
+        "archivo": "PORNHUB.pdf",
+        "tema": "Medio Ambiente",
+        "confianza_tema": 0.6,
+        "veracidad": "Verdadero",
+        "confianza_veracidad": 0.95,
+        "clasificacion_correcta": true,
+        "contenido_preview": "INTERNACIONAL\n EUROPA\n LATINOAMÉRICA\n EEUU\n ÁFRICA\n MEDIO ORIENTE\n ASIA\n MÁS REGIONES\n VENE\nUna Comisión concluyó que esas plataformas no han implementado\n\"medidas apropiadas y proporcionadas\" de segu..."
+      },
+      {
+        "archivo": "SALUD.pdf",
+        "tema": "COVID-19",
+        "confianza_tema": 0.7,
+        "veracidad": "Verdadero",
+        "confianza_veracidad": 1.0,
+        "clasificacion_correcta": true,
+        "contenido_preview": "1\nLAURA NATHALIE HERNÁNDEZ RIVERA, DERECHOS DIGITALES  \nPARA LA GLOBAL NETWORK INITIATIVE | OCTOBER 2021\nESPAÑOL\nENGLISH\nUSO DE \nTECNOLOGÍAS \nPARA EL \nCOMBATE DE  \nLA PANDEMIA\nDATOS PERSONALES EN \nLAT..."
+      },
+      {
+        "archivo": "TECNOLOGIA.pdf",
+        "tema": "Educación",
+        "confianza_tema": 0.9,
+        "veracidad": "Mayormente verdadero",
+        "confianza_veracidad": 0.75,
+        "clasificacion_correcta": true,
+        "contenido_preview": "1\nLa IA y el futuro de la educación: Interrupciones, dilemas y orientaciones\nContexto\nDISRUPCIONES: Tomar el pulso a la IA en la educación\nLa creciente presencia de la IA en la educación ha suscitado ..."
+      },
+      {
+        "archivo": "VIDEOJUEGOS.pdf",
+        "tema": "General",
+        "confianza_tema": 0.5,
+        "veracidad": "Verdadero",
+        "confianza_veracidad": 20.23,
+        "clasificacion_correcta": true,
+        "contenido_preview": "Vandal Random / Noticias / Ya es oficial: Hideo Kojima confirma que el videojuego 'Death Stranding' tendrá anime además de película\nYa es oficial: Hideo Kojima confirma que el\nvideojuego 'Death Strand..."
+      }
+    ]
+  },
+  "falsas": {
+    "archivos": [],
+    "correctos": 10,
+    "incorrectos": 0,
+    "detalles": [
+      {
+        "archivo": "Científicos descubren que los gatos son en realidad agentes secretos intergalácticos.pdf",
+        "tema": "Tecnología",
+        "confianza_tema": 0.6,
+        "veracidad": "Falso",
+        "confianza_veracidad": 0.0,
+        "clasificacion_correcta": true,
+        "contenido_preview": "Científicos descubren que los gatos son en \nrealidad agentes secretos intergalácticos \nLondres, 28 de mayo de 2025 — Un equipo internacional de científicos en el campo de la \nastrobiología y la etolog..."
+      },
+      {
+        "archivo": "ensayo_sobre_el_libro_la_tierra_es_plana_de_thomas_friedman_publicacion.pdf",
+        "tema": "General",
+        "confianza_tema": 0.5,
+        "veracidad": "Error en análisis",
+        "confianza_veracidad": 0,
+        "clasificacion_correcta": true,
+        "contenido_preview": "Ensayo sobre el libro “La Tierra es Plana ” de Thomas Friedman \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nPor: \n \nRamón Elías Bustamante Vélez1 \n \n \n2008 \n \n \n                                               ..."
+      },
+      {
+        "archivo": "La Tierra es un gigantesco colador cósmico.pdf",
+        "tema": "Ciencia",
+        "confianza_tema": 0.6,
+        "veracidad": "Falso",
+        "confianza_veracidad": 0.1,
+        "clasificacion_correcta": true,
+        "contenido_preview": "La Tierra es un gigantesco colador cósmico, \nrevela estudio secreto de la NASA \nWashington, 28 de mayo de 2025 — Un informe confidencial de la NASA filtrado \nrecientemente ha revelado una teoría revol..."
+      },
+      {
+        "archivo": "noticia_falsa_ciberseguridad.pdf",
+        "tema": "General",
+        "confianza_tema": 0.5,
+        "veracidad": "Falso",
+        "confianza_veracidad": 0.1,
+        "clasificacion_correcta": true,
+        "contenido_preview": "Noticia Falsa: Vida Inteligente en la Luna\nUn Hacker Descubre un Codigo Secreto que Permite Controlar Todos los Dispositivos Inteligentes\ndel Mundo\nUn experto en ciberseguridad ha revelado haber encon..."
+      },
+      {
+        "archivo": "noticia_falsa_continente.pdf",
+        "tema": "Ciencia",
+        "confianza_tema": 0.6,
+        "veracidad": "Falso",
+        "confianza_veracidad": 0.0,
+        "clasificacion_correcta": true,
+        "contenido_preview": "Noticia Falsa: Vida Inteligente en la Luna\nDescubren un Nuevo Continente Bajo el Oceano Pacifico\nUn equipo de oceanografos ha anunciado el hallazgo de un continente completamente desconocido\nbajo las ..."
+      },
+      {
+        "archivo": "noticia_falsa_energia.pdf",
+        "tema": "Medio Ambiente",
+        "confianza_tema": 0.6,
+        "veracidad": "Falso",
+        "confianza_veracidad": 0.1,
+        "clasificacion_correcta": true,
+        "contenido_preview": "Noticia Falsa: Vida Inteligente en la Luna\nDescubren una Nueva Forma de Energia Ilimitada y Limpia en un Laboratorio Secreto\nCientificos de un laboratorio secreto ubicado en un lugar no revelado han a..."
+      },
+      {
+        "archivo": "noticia_falsa_gatos.pdf",
+        "tema": "General",
+        "confianza_tema": 0.5,
+        "veracidad": "Falso",
+        "confianza_veracidad": 0.1,
+        "clasificacion_correcta": true,
+        "contenido_preview": "Noticia Falsa: Vida Inteligente en la Luna\nDescubren que los Gatos Tienen la Capacidad de Ver el Futuro\nEn un sorprendente hallazgo, un grupo de investigadores ha publicado un estudio que demuestra\nqu..."
+      },
+      {
+        "archivo": "noticia_falsa_luna.pdf",
+        "tema": "General",
+        "confianza_tema": 0.5,
+        "veracidad": "Falso",
+        "confianza_veracidad": 0.0,
+        "clasificacion_correcta": true,
+        "contenido_preview": "Noticia Falsa: Vida Inteligente en la Luna\nImpactante Descubrimiento Científico: Confirmado que la Luna Está Habitadas por Criaturas\nInteligentes\nEn un giro inesperado para la comunidad científica mun..."
+      },
+      {
+        "archivo": "noticia_falsa_plantas.pdf",
+        "tema": "Medio Ambiente",
+        "confianza_tema": 0.7,
+        "veracidad": "Mayormente falso",
+        "confianza_veracidad": 0.2,
+        "clasificacion_correcta": true,
+        "contenido_preview": "Noticia Falsa: Vida Inteligente en la Luna\nRevelan que las Plantas Pueden Comunicarse entre Si y con los Humanos\nUn reciente estudio cientifico ha desatado una revolucion en la biologia al confirmar q..."
+      },
+      {
+        "archivo": "noticia_falsa_portal_amazonico.pdf",
+        "tema": "General",
+        "confianza_tema": 0.5,
+        "veracidad": "Falso",
+        "confianza_veracidad": 0.0,
+        "clasificacion_correcta": true,
+        "contenido_preview": "Noticia Falsa: Vida Inteligente en la Luna\nEncuentran un Portal Dimensional Activo en la Selva Amazonica\nUn equipo de exploradores ha anunciado el hallazgo de un portal dimensional activo en la\nprofun..."
+      }
+    ]
+  },
+  "metricas": {
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1_score": 0.888888888888889,
+    "accuracy": 0.9,
+    "total_archivos": 20
+  },
+  "confusion_matrix": {
+    "VP": 8,
+    "VN": 10,
+    "FP": 0,
+    "FN": 2
+  }
+}
