@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block title %}RoBERTa Web | Masivo{% endblock %}
+{% block content %}
+<div class="row g-4">
+  <div class="col-lg-4">
+    <div class="panel-card p-4">
+      <div class="section-title">Análisis masivo</div>
+      <form method="post">
+        <div class="mb-3">
+          <label class="form-label">Directorio verdaderas</label>
+          <input name="dir_verdaderas" class="form-control input-dark" value="{{ dir_verdaderas }}" placeholder="C:\\ruta\\verdaderas">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Directorio falsas</label>
+          <input name="dir_falsas" class="form-control input-dark" value="{{ dir_falsas }}" placeholder="C:\\ruta\\falsas">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Máximo por categoría</label>
+          <input type="number" min="1" max="10" name="max_archivos" class="form-control input-dark" value="{{ max_archivos }}">
+        </div>
+        <button type="submit" class="btn btn-accent px-4">Ejecutar análisis</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-lg-8">
+    {% if resultados %}
+    <div class="result-stack fade-in-up">
+      <div class="panel-card p-4">
+        <div class="section-title">Métricas</div>
+        <div class="row g-3">
+          <div class="col-md-3"><div class="metric-card p-3"><div class="metric-label">Precisión</div><div class="fw-bold">{{ (resultados.metricas.precision * 100) | round(1) if resultados.metricas else 0 }}%</div></div></div>
+          <div class="col-md-3"><div class="metric-card p-3"><div class="metric-label">Recall</div><div class="fw-bold">{{ (resultados.metricas.recall * 100) | round(1) if resultados.metricas else 0 }}%</div></div></div>
+          <div class="col-md-3"><div class="metric-card p-3"><div class="metric-label">F1</div><div class="fw-bold">{{ (resultados.metricas.f1_score * 100) | round(1) if resultados.metricas else 0 }}%</div></div></div>
+          <div class="col-md-3"><div class="metric-card p-3"><div class="metric-label">Exactitud</div><div class="fw-bold">{{ (resultados.metricas.accuracy * 100) | round(1) if resultados.metricas else 0 }}%</div></div></div>
+        </div>
+      </div>
+
+      <div class="panel-card p-4">
+        <div class="section-title">Matriz de confusión</div>
+        <div class="row g-3">
+          <div class="col-md-3"><div class="metric-card p-3"><div class="metric-label">VP</div><div class="fw-bold">{{ resultados.confusion_matrix.VP }}</div></div></div>
+          <div class="col-md-3"><div class="metric-card p-3"><div class="metric-label">VN</div><div class="fw-bold">{{ resultados.confusion_matrix.VN }}</div></div></div>
+          <div class="col-md-3"><div class="metric-card p-3"><div class="metric-label">FP</div><div class="fw-bold">{{ resultados.confusion_matrix.FP }}</div></div></div>
+          <div class="col-md-3"><div class="metric-card p-3"><div class="metric-label">FN</div><div class="fw-bold">{{ resultados.confusion_matrix.FN }}</div></div></div>
+        </div>
+      </div>
+
+      <div class="panel-card p-4">
+        <div class="section-title">Archivos verdaderos</div>
+        {% if resultados.verdaderas.detalles %}
+        <ul class="batch-list">
+          {% for detalle in resultados.verdaderas.detalles %}
+          <li class="mb-2">
+            <strong>{{ detalle.archivo }}</strong> - {{ detalle.veracidad }} · {{ (detalle.confianza_veracidad * 100) | round(1) }}%
+            <div class="small-helper">Tema: {{ detalle.tema }} · Correcto: {{ 'Sí' if detalle.clasificacion_correcta else 'No' }}</div>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+
+      <div class="panel-card p-4">
+        <div class="section-title">Archivos falsos</div>
+        {% if resultados.falsas.detalles %}
+        <ul class="batch-list">
+          {% for detalle in resultados.falsas.detalles %}
+          <li class="mb-2">
+            <strong>{{ detalle.archivo }}</strong> - {{ detalle.veracidad }} · {{ (detalle.confianza_veracidad * 100) | round(1) }}%
+            <div class="small-helper">Tema: {{ detalle.tema }} · Correcto: {{ 'Sí' if detalle.clasificacion_correcta else 'No' }}</div>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+    {% else %}
+    <div class="panel-card p-4 h-100 d-flex align-items-center justify-content-center">
+      <div class="text-center muted">
+        <i class="bi bi-bar-chart-line fs-1 d-block mb-3"></i>
+        <div class="section-title text-white">Aún no hay resultados</div>
+        <p class="mb-0">Indica los dos directorios locales y ejecuta el análisis para ver métricas y errores.</p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block title %}RoBERTa Web | PDF{% endblock %}
+{% block content %}
+<div class="row g-4">
+  <div class="col-lg-5">
+    <div class="panel-card p-4">
+      <div class="section-title">Analizar PDF o TXT</div>
+      <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label class="form-label">Archivo</label>
+          <input type="file" name="archivo_pdf" class="form-control input-dark" accept=".pdf,.txt">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Tema opcional</label>
+          <input name="tema" class="form-control input-dark" value="{{ tema }}" placeholder="Ej. tecnología, economía">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Pregunta para el chatbot</label>
+          <input name="pregunta" class="form-control input-dark" value="{{ pregunta }}" placeholder="Pregunta sobre el documento">
+        </div>
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="checkbox" id="verificar_pdf" name="verificar" checked>
+          <label class="form-check-label" for="verificar_pdf">Verificar la respuesta del chatbot</label>
+        </div>
+        <button type="submit" class="btn btn-accent px-4">Procesar archivo</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-lg-7">
+    {% if resultado %}
+    <div class="result-stack fade-in-up">
+      <div class="panel-card p-4">
+        <div class="section-title">Resumen del documento</div>
+        <div class="row g-3">
+          <div class="col-md-4"><div class="metric-card p-3"><div class="metric-label">Tema detectado</div><div class="fw-bold">{{ resultado.tema_detectado }}</div><div class="small-helper">Confianza {{ (resultado.confianza_tema * 100) | round(1) }}%</div></div></div>
+          <div class="col-md-4"><div class="metric-card p-3"><div class="metric-label">Sentimiento</div><div class="fw-bold text-uppercase">{{ resultado.sentimiento }}</div><div class="small-helper">Confianza {{ (resultado.confianza_sentimiento * 100) | round(1) }}%</div></div></div>
+          <div class="col-md-4"><div class="metric-card p-3"><div class="metric-label">Veracidad</div><div class="fw-bold">{{ resultado.verificacion.veracidad }}</div><div class="small-helper">Confianza {{ (resultado.verificacion.confianza * 100) | round(1) }}%</div></div></div>
+        </div>
+      </div>
+
+      <div class="panel-card p-4">
+        <div class="section-title">Vista previa extraída</div>
+        <p class="muted mb-0">{{ texto_extraido[:900] }}{% if texto_extraido|length > 900 %}...{% endif %}</p>
+      </div>
+
+      <div class="panel-card p-4">
+        <div class="section-title">Afirmaciones verificables</div>
+        {% if resultado.afirmaciones %}
+          <ul class="claim-list">
+            {% for afirmacion in resultado.afirmaciones %}
+              <li class="mb-2">{{ afirmacion }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="muted mb-0">No se encontraron afirmaciones principales.</p>
+        {% endif %}
+      </div>
+
+      {% if respuesta_chat %}
+      <div class="panel-card p-4">
+        <div class="section-title">Respuesta del chatbot</div>
+        <p class="mb-0">{{ respuesta_chat }}</p>
+      </div>
+      {% endif %}
+    </div>
+    {% else %}
+    <div class="panel-card p-4 h-100 d-flex align-items-center justify-content-center">
+      <div class="text-center muted">
+        <i class="bi bi-file-earmark-arrow-up fs-1 d-block mb-3"></i>
+        <div class="section-title text-white">Esperando archivo</div>
+        <p class="mb-0">Sube un PDF o TXT para extraer texto, detectar tema, analizar veracidad y consultar el contenido.</p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

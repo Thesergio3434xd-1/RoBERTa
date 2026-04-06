@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block title %}RoBERTa Web | Texto{% endblock %}
+{% block content %}
+<div class="row g-4">
+  <div class="col-lg-5">
+    <div class="panel-card p-4">
+      <div class="section-title">Analizar texto</div>
+      <form method="post">
+        <div class="mb-3">
+          <label class="form-label">Texto</label>
+          <textarea name="texto" class="form-control textarea-dark" rows="12" placeholder="Pega aquí el texto a analizar">{{ texto }}</textarea>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Tema opcional</label>
+          <input name="tema" class="form-control input-dark" value="{{ tema }}" placeholder="Ej. política, salud, economía">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Pregunta para el chatbot</label>
+          <input name="pregunta" class="form-control input-dark" value="{{ pregunta }}" placeholder="Haz una pregunta sobre el texto">
+        </div>
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="checkbox" id="verificar" name="verificar" checked>
+          <label class="form-check-label" for="verificar">Verificar la respuesta del chatbot</label>
+        </div>
+        <button type="submit" class="btn btn-accent px-4">Analizar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-lg-7">
+    {% if resultado %}
+    <div class="result-stack fade-in-up">
+      <div class="panel-card p-4">
+        <div class="section-title">Resumen</div>
+        <div class="row g-3">
+          <div class="col-md-4"><div class="metric-card p-3"><div class="metric-label">Tema detectado</div><div class="fw-bold">{{ resultado.tema_detectado }}</div><div class="small-helper">Confianza {{ (resultado.confianza_tema * 100) | round(1) }}%</div></div></div>
+          <div class="col-md-4"><div class="metric-card p-3"><div class="metric-label">Sentimiento</div><div class="fw-bold text-uppercase">{{ resultado.sentimiento }}</div><div class="small-helper">Confianza {{ (resultado.confianza_sentimiento * 100) | round(1) }}%</div></div></div>
+          <div class="col-md-4"><div class="metric-card p-3"><div class="metric-label">Veracidad</div><div class="fw-bold">{{ resultado.verificacion.veracidad }}</div><div class="small-helper">Confianza {{ (resultado.verificacion.confianza * 100) | round(1) }}%</div></div></div>
+        </div>
+      </div>
+
+      <div class="panel-card p-4">
+        <div class="section-title">Afirmaciones verificables</div>
+        {% if resultado.afirmaciones %}
+          <ul class="claim-list">
+            {% for afirmacion in resultado.afirmaciones %}
+              <li class="mb-2">{{ afirmacion }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="muted mb-0">No se encontraron afirmaciones principales.</p>
+        {% endif %}
+      </div>
+
+      <div class="panel-card p-4">
+        <div class="section-title">Análisis de veracidad</div>
+        <p class="muted mb-0">{{ resultado.verificacion.analisis_completo }}</p>
+      </div>
+
+      {% if respuesta_chat %}
+      <div class="panel-card p-4">
+        <div class="section-title">Respuesta del chatbot</div>
+        <p class="mb-0">{{ respuesta_chat }}</p>
+      </div>
+      {% endif %}
+    </div>
+    {% else %}
+    <div class="panel-card p-4 h-100 d-flex align-items-center justify-content-center">
+      <div class="text-center muted">
+        <i class="bi bi-arrow-left-right fs-1 d-block mb-3"></i>
+        <div class="section-title text-white">Esperando texto</div>
+        <p class="mb-0">Pega un texto y ejecuta el análisis para ver tema, sentimiento, veracidad y chat contextual.</p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

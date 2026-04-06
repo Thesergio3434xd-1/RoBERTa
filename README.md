@@ -410,6 +410,20 @@ Luego, navega a la carpeta y abre el archivo. Ejecuta las celdas en orden.
 python main.py
 ```
 
+### 🌐 Paso 5.1: Ejecutar la app web nueva
+
+Desde la raíz del proyecto ejecuta:
+
+```powershell
+python -m roberta_web.app
+```
+
+Luego abre:
+
+```text
+http://127.0.0.1:5000/
+```
+
 ### 📊 Paso 6: Revisar Resultados
 
 Los resultados se generan en:
