@@ -28,8 +28,8 @@
 <a href="https://pytorch.org/">
   <img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="PyTorch" width="40" />
 </a>&nbsp;
-<a href="https://openai.com/">
-  <img src="https://cdn.simpleicons.org/openai/412991" alt="OpenAI" width="40" />
+<a href="https://chat.openai.com/">
+  <img src="https://cdn.simpleicons.org/chatgpt/10A37F" alt="ChatGPT" width="40" />
 </a>&nbsp;
 <a href="https://jupyter.org/">
   <img src="https://cdn.simpleicons.org/jupyter/F37726" alt="Jupyter" width="40" />
@@ -41,9 +41,37 @@
 
 ## 👥 Creadores
 
-- **[Oscar Cuadros Rodríguez](https://github.com/Wozniak343)**
-- **[Ronald Neomar Tapias Rojas](https://github.com/RontaTheOne)**
-- **[Sergio Alejandro Uribe Montealegre](https://github.com/Thesergio3434xd-1)**
+<div align="center">
+
+### 🚀 Equipo de Desarrollo
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Wozniak343">
+        <img src="https://img.shields.io/badge/Oscar%20Cuadros-Rodríguez-blue?style=for-the-badge&logo=github&logoColor=white" alt="Oscar Cuadros" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/RontaTheOne">
+        <img src="https://img.shields.io/badge/Ronald%20Neomar-Tapias%20Rojas-blue?style=for-the-badge&logo=github&logoColor=white" alt="Ronald Tapias" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Thesergio3434xd-1">
+        <img src="https://img.shields.io/badge/Sergio%20Alejandro-Uribe%20Montealegre-blue?style=for-the-badge&logo=github&logoColor=white" alt="Sergio Uribe" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+[![GitHub Oscar](https://img.shields.io/badge/🧑‍💻%20Oscar-Wozniak343-000000?style=flat&logo=github)](https://github.com/Wozniak343)
+&nbsp;&nbsp;&nbsp;
+[![GitHub Ronald](https://img.shields.io/badge/🧑‍💻%20Ronald-RontaTheOne-000000?style=flat&logo=github)](https://github.com/RontaTheOne)
+&nbsp;&nbsp;&nbsp;
+[![GitHub Sergio](https://img.shields.io/badge/🧑‍💻%20Sergio-Thesergio3434xd-000000?style=flat&logo=github)](https://github.com/Thesergio3434xd-1)
+
+</div>
 
 ---
 
@@ -929,26 +957,136 @@ Esperamos que esta investigación inspire futuras iniciativas que:
 
 ## 🤝 Contribuciones
 
-Este proyecto fue desarrollado como parte de la **Electiva 3** en la Universidad Distrital Francisco José de Caldas.
+### 📚 Contexto Académico
 
-Para reportar bugs o sugerir mejoras:
-1. Abre un [Issue](https://github.com/Thesergio3434xd-1/RoBERTa/issues)
-2. Crea un [Pull Request](https://github.com/Thesergio3434xd-1/RoBERTa/pulls)
+Este proyecto fue desarrollado como parte de la **Electiva 3** en la **Universidad Distrital Francisco José de Caldas**, reflejando un compromiso con la excelencia académica y la investigación aplicada en inteligencia artificial y procesamiento de lenguaje natural.
+
+### 🐛 Reportar Problemas
+
+Si encuentras un bug o tienes sugerencias para mejorar RoBERTa:
+
+<div align="center">
+
+**[![Issues](https://img.shields.io/badge/📋-Reportar%20un%20Issue-FF6B6B?style=flat-square)](https://github.com/Thesergio3434xd-1/RoBERTa/issues)**
+&nbsp;&nbsp;&nbsp;
+**[![PR](https://img.shields.io/badge/🔀-Crear%20Pull%20Request-4CAF50?style=flat-square)](https://github.com/Thesergio3434xd-1/RoBERTa/pulls)**
+
+</div>
+
+### ✅ Guía para Contribuir
+
+1. **Haz un Fork** del repositorio
+   ```bash
+   git clone https://github.com/tu-usuario/RoBERTa.git
+   ```
+
+2. **Crea una rama** para tu feature
+   ```bash
+   git checkout -b feature/tu-mejora
+   ```
+
+3. **Realiza tus cambios** y haz commit
+   ```bash
+   git add .
+   git commit -m "feat: descripción de tu mejora"
+   ```
+
+4. **Push a la rama**
+   ```bash
+   git push origin feature/tu-mejora
+   ```
+
+5. **Abre un Pull Request**
+   - Describe claramente los cambios realizados
+   - Incluye referencias a Issues si corresponde
+   - Espera retroalimentación del equipo
+
+### 📋 Estándares de Contribución
+
+- **Código limpio**: Sigue PEP 8 para Python
+- **Documentación**: Comenta tu código significativamente
+- **Tests**: Incluye pruebas unitarias cuando sea posible
+- **Commits**: Usa mensajes descriptivos y semánticos
 
 ---
 
 ## 📄 Licencia
 
-MIT License - Libre para uso académico y comercial  
-Ver archivo [LICENSE](LICENSE) para detalles completos.
+### MIT License - Open Source
+
+**RoBERTa** se distribuye bajo la **Licencia MIT**, permitiendo su uso libre en proyectos académicos y comerciales.
+
+<div align="center">
+
+### 📋 Términos Principales
+
+| Permiso | Descripción |
+|---------|-------------|
+| ✅ **Usar** | Utilizar el software libremente en cualquier proyecto |
+| ✅ **Modificar** | Adaptar y mejorar el código según necesidades |
+| ✅ **Distribuir** | Compartir y redistribuir el software |
+| ✅ **Privado** | Usar en proyectos privados sin restricciones |
+| ⚠️ **Sin Garantía** | El software se proporciona "tal cual" sin garantías |
+| ⚠️ **Sin Responsabilidad** | Los creadores no son responsables por daños derivados del uso |
+
+</div>
+
+### 📑 Copyright
+
+```
+MIT License - Copyright (c) 2025
+
+Oscar Cuadros Rodríguez
+Ronald Neomar Tapias Rojas
+Sergio Alejandro Uribe Montealegre
+
+Se otorga permiso, sin costo alguno, a cualquier persona que obtenga una copia
+del software para usar, modificar, distribuir y sublicenciar el software.
+```
+
+📎 **[Ver archivo LICENSE completo →](LICENSE)**
 
 ---
 
 ## 📞 Creadores y Contacto
 
-- **[Oscar Cuadros Rodríguez](https://github.com/Wozniak343)**
-- **[Ronald Neomar Tapias Rojas](https://github.com/RontaTheOne)**
-- **[Sergio Alejandro Uribe Montealegre](https://github.com/Thesergio3434xd-1)**
+<div align="center">
+
+### 🌟 El Equipo Detrás de RoBERTa
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <h4><a href="https://github.com/Wozniak343">Oscar Cuadros</a></h4>
+      <p>Arquitecto del Sistema</p>
+      <p>
+        <a href="https://github.com/Wozniak343">
+          <img src="https://img.shields.io/badge/GitHub-Wozniak343-000000?style=flat&logo=github" alt="GitHub" />
+        </a>
+      </p>
+    </td>
+    <td align="center" width="33%">
+      <h4><a href="https://github.com/RontaTheOne">Ronald Neomar</a></h4>
+      <p>Ingeniero de Datos</p>
+      <p>
+        <a href="https://github.com/RontaTheOne">
+          <img src="https://img.shields.io/badge/GitHub-RontaTheOne-000000?style=flat&logo=github" alt="GitHub" />
+        </a>
+      </p>
+    </td>
+    <td align="center" width="33%">
+      <h4><a href="https://github.com/Thesergio3434xd-1">Sergio Alejandro</a></h4>
+      <p>Lead Developer</p>
+      <p>
+        <a href="https://github.com/Thesergio3434xd-1">
+          <img src="https://img.shields.io/badge/GitHub-Thesergio3434xd-000000?style=flat&logo=github" alt="GitHub" />
+        </a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
